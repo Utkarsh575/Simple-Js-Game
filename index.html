@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>canvas { background:rgb(0, 0, 0); box-shadow: 10px; border-radius:10px; }
+        body{background: linear-gradient(90deg, rgba(234,202,255,1) 0%, rgba(255,91,91,1) 50%, rgba(255,191,101,1) 100%);}
+    
+    </style>
+    <title>ARKANOID</title>
+</head>
+<body>
+
+    <h2 style=" text-align: center; font-family: sans-serif;" >USE MOUSE OR LEFT & RIGHT ARROW TO PLAY</h2>
+    <canvas class="container" style="margin-left: 34%;" id="myCanvas" width="480" height="320"></canvas>
+
+<script src="./index.js"></script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+        max: 25,
+        speed: 400
+        });
+        </script>
+</body>
+</html>
